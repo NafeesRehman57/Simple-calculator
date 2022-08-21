@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Simple Calculator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/dark.css" id="theme" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <h1>Basic/Simple Calculator</h1>
+      <h3>Enjoy it</h3>
+      <div class="container">
+        <div class="first-row">
+          <input
+            type="text"
+            name="result"
+            class="result"
+            id="result"
+            value=""
+            placeholder="Result"
+            readonly
+          />
+          <input type="button" value="C" onclick="clearScreen()" id="clear" />
+        </div>
+        <div class="second-row">
+          <input type="button" value="1" onclick="displayResult(1)" id="one" />
+          <input type="button" value="2" onclick="displayResult(2)" id="two" />
+          <input
+            type="button"
+            value="3"
+            id="three"
+            onclick="displayResult(3)"
+          />
+          <input type="button" value="+" onclick="displayResult('+')" />
+        </div>
+        <div class="third-row">
+          <input type="button" value="4" id="four" onclick="displayResult(4)" />
+          <input type="button" value="5" id="five" onclick="displayResult(5)" />
+          <input type="button" value="6" id="six" onclick="displayResult(6)" />
+          <input type="button" value="-" onclick="displayResult('-')" />
+        </div>
+        <div class="fourth-row">
+          <input
+            type="button"
+            value="7"
+            id="seven"
+            onclick="displayResult(7)"
+          />
+          <input
+            type="button"
+            value="8"
+            id="eight"
+            onclick="displayResult(8)"
+          />
+          <input type="button" value="9" id="nine" onclick="displayResult(9)" />
+          <input type="button" value="x" onclick="displayResult('*')" />
+        </div>
+        <div class="fifth-row">
+          <input type="button" value="/" onclick="displayResult('/')" />
+
+          <input type="button" value="0" id="zero" onclick="displayResult(0)" />
+          <input
+            type="button"
+            value="."
+            class="dot"
+            onclick="displayResult('.')"
+          />
+          <input type="button" value="=" onclick="calculate()" />
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Copyright &copy; All Right Reserver 2022 <br />
+          Calculator made with ❤ by Nafees Rehman
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
